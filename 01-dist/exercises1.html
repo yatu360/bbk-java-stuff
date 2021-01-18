@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>exercises1</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1 id="exercise-set-1">Exercise set 1</h1>
+<h3 id="practice-exercise">Practice exercise</h3>
+<p>The first exercise given here, <strong>Max</strong>, is included for practice and to help you get accustomed to what will be provided to you, for each exercise; it does not need to be submitted. Let’s first take a look at the exercise description:</p>
+<ul>
+<li><p><strong>Max</strong> (Max.java).</p>
+<p>Write a method <em>max</em> that, given two <em>int</em>s, returns the maximum of the two given values.</p></li>
+</ul>
+<p>Note that, after the name of the exercise (in this case, <strong>Max</strong>), the name of the file where you should provide your code is given (in this case, this name is <em>Max.java</em>). You should be able to find a file called <em>Max.java</em> included with the files for this exercise set. Unless explicitly mentioned, the method header(s) should be set up for you. You should not modify the method header(s) nor the class header(s). You should provide code in the method body or bodies. Typically, a “checker” will be provided, and the name of the file where it is provided will be the filename given in the description with “Checker” added before “.java”; in this case, the checker is provided in the file <em>MaxChecker.java</em>. (To work with these files in IntelliJ, they should be placed into a project; depending on your version, it might be possible to create an empty project, and then, in your operating system, copy, into the <em>src</em> directory of the project, the .java files that you wish to include in the project.)</p>
+<p>Please try running the <em>main</em> method of <em>MaxChecker.java</em> without modifying the code of the method <em>max</em>, so that the method body of <em>max</em> simply contains “return 0;”. You should see something like the following, as output:</p>
+<pre><code>---- On code snippet:
+{ s = &quot;&quot; + Max.max(3,4); }
+---- Expected value of String s:
+4
+---- Actual value of String s:
+0</code></pre>
+<p>The “code snippet” shows a snippet of code where the given code has been judged to behave incorrectly (here, <em>s</em> is declared to be a <em>String</em> prior to the snippet). The expected (correct) value of <em>s</em> is provided (here, it is 4), and the actual value of <em>s</em> that resulted from using your code (in <em>Max.java</em>) is also provided (here, it is 0). Now, try modifying the body of the method <em>max</em> so that it contains “return 4;”. You should then see a <em>different</em> code snippet where this second implementation fails, along with the other described information. Please also try placing code that correctly returns the maximum of the given <em>int</em>s in the body of the method <em>max</em>, for example, the following code:</p>
+<pre><code>    public static int max( int a, int b )
+    {
+        if( a &gt; b )
+        {
+            return a;
+        }
+        else
+        {
+            return b;
+        }
+    }</code></pre>
+<p>When you run the checker with this correct code, it should provide you with a message stating that you passed all of its tests. (Remark: you don’t actually have to read the code of the checker; you can just run its <em>main</em> method to use it.)</p>
+<p>Note that the checker is intended to provide <strong>some basic tests</strong>, and there is certainly <strong>no guarantee</strong> that your code is correct if it passes all of the checker’s tests. You are <strong>strongly encouraged</strong> to test your own code. One way to do this is to write your own testing code in a <em>main</em> method of the file where you are supposed to provide your code (in the case of <em>Max.java</em>, you can see that a <em>main</em> method with empty body has been provided.) For these exercises, any testing code that you write (that is not invoked by the methods you are asked to implement) will not be considered when performing mark evaluation.</p>
+<h3 id="exercises-to-be-submitted">Exercises to be submitted</h3>
+<p>The descriptions of the exercises that do need to be submitted are given in the following. Please submit one .zip file that contains just the solutions to these exercises (with the specified filename); <strong>the first two lines of each .java file you submit must contain end-of-line comments containing your 8-digit Birkbeck ID, and your e-mail address.</strong> The first line should consist of two slashes (/), a space, and your 8-digit Birkbeck ID; the second line should consist of two slashes (/), a space, and your e-mail address. Please note that (1) the method that you are asked to implement should not print anything to the screen (unless mentioned explicitly), and (2) you are asked not to use packages in the .java files that you submit, i.e., each .java file should not contain the keyword “package” at all.</p>
+<ul>
+<li><p><strong>Middle of three</strong> (Middle.java).</p>
+<p>Write a method <em>middle</em> that, given three <em>int</em>s, a, b, and c, returns the middle value: if two (or more) of the given ints are equal to a value x, the returned value should be that value x; otherwise, the returned value should be the unique value that is strictly larger than one of the other values <em>and</em> strictly smaller than one of the other values.</p></li>
+<li><p><strong>Intersecting intervals</strong> (Intervals.java).</p>
+<p>When <em>a</em> and <em>b</em> are integers, the notation <em>[a,b]</em> is used to denote the set of all integers <em>x</em> such that <em>a &lt;= x</em> and <em>x &lt;= b</em> (that is, such that <em>a</em> is less than or equal to <em>x</em>, and <em>x</em> is less than or equal to <em>b</em>). A set of this form is called an <em>interval</em>.</p>
+<p>The intersection of any two given intervals (that is, the set of integers that fall into both of the intervals) is always an interval. Write a method <em>intersect</em> that, given four <em>int</em>s <em>a1</em>, <em>b1</em>, <em>a2</em>, and <em>b2</em>, returns a String, as follows:</p>
+<ul>
+<li>If the intersection of the intervals <em>[a1,b1]</em> and <em>[a2,b2]</em> is non-empty (that is, if this intersection contains one or more integers), the returned String should hold a value presenting this intersection using the introduced notation.</li>
+<li>If this intersection is empty, the returned String should be “[]”.</li>
+</ul>
+<p>For example, upon being given (1,3,2,4), the method should return the String “[2,3]”: this is because <em>[2,3]</em> is the intersection of <em>[1,3]</em> and <em>[2,4]</em>.</p></li>
+<li><p><strong>Add one second</strong> (AddSecond.java).</p>
+<p>Write a method addSecond that, given three <em>int</em>s <em>h</em>, <em>m</em>, and <em>s</em> representing the hours, minutes, and seconds of a clock time in 24-hour format, returns a String containing the given clock time plus one second. You can assume that the given <em>int</em>s obey <em>0 &lt;= h &lt; 24</em>, <em>0 &lt;= m &lt; 60</em>, and <em>0 &lt;= s &lt; 60</em>. Your method should always return a clock time in hours:minutes:seconds format where the hours, minutes, and seconds obey the constraints given in the previous sentence, and where each of these three components is represented using exactly two digits.</p>
+<p>For example, upon being given (19,45,59), the method should return the String “19:46:00”.</p></li>
+</ul>
+</body>
+</html>
